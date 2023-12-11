@@ -1,0 +1,60 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2757
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red95\green112\blue168;\red1\green25\blue64;
+\red253\green136\blue147;\red139\green255\blue255;\red200\green241\blue153;\red254\green185\blue125;\red229\green168\blue255;
+\red174\green208\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000;\cssrgb\c44706\c52157\c71765;\cssrgb\c0\c14118\c31765;
+\cssrgb\c100000\c61569\c64314;\cssrgb\c60000\c100000\c100000;\cssrgb\c81961\c94510\c66275;\cssrgb\c100000\c77255\c56078;\cssrgb\c92157\c73333\c100000;
+\cssrgb\c73333\c85490\c100000;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \strokec3 # Add another data type, a function \cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3 # List of foods, their cooking instructions, ingredients, and cooking time\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb4 \strokec5 food_data\cf2 \strokec2  \cf6 \strokec6 =\cf2 \strokec2  \{\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb4     \cf7 \strokec7 "chicken"\cf2 \strokec2 : \{\cb1 \
+\cb4         \cf7 \strokec7 "instructions"\cf2 \strokec2 : \cf7 \strokec7 "1. Preheat the oven to 350\'b0F.\cf8 \strokec8 \\n\cf7 \strokec7 2. Season the chicken with salt and pepper.\cf8 \strokec8 \\n\cf7 \strokec7 3. Bake for 45 minutes."\cf2 \strokec2 ,\cb1 \
+\cb4         \cf7 \strokec7 "ingredients"\cf2 \strokec2 : [\cf7 \strokec7 "chicken"\cf2 \strokec2 , \cf7 \strokec7 "salt"\cf2 \strokec2 , \cf7 \strokec7 "pepper"\cf2 \strokec2 ],\cb1 \
+\cb4         \cf7 \strokec7 "cooking_time"\cf2 \strokec2 : \cf7 \strokec7 "45 minutes"\cf2 \cb1 \strokec2 \
+\cb4     \},\cb1 \
+\cb4     \cf7 \strokec7 "pasta"\cf2 \strokec2 : \{\cb1 \
+\cb4         \cf7 \strokec7 "instructions"\cf2 \strokec2 : \cf7 \strokec7 "1. Boil water in a large pot.\cf8 \strokec8 \\n\cf7 \strokec7 2. Add pasta and cook for 8-10 minutes.\cf8 \strokec8 \\n\cf7 \strokec7 3. Drain and serve with your favorite sauce."\cf2 \strokec2 ,\cb1 \
+\cb4         \cf7 \strokec7 "ingredients"\cf2 \strokec2 : [\cf7 \strokec7 "pasta"\cf2 \strokec2 , \cf7 \strokec7 "water"\cf2 \strokec2 , \cf7 \strokec7 "sauce"\cf2 \strokec2 ],\cb1 \
+\cb4         \cf7 \strokec7 "cooking_time"\cf2 \strokec2 : \cf7 \strokec7 "8-10 minutes"\cf2 \cb1 \strokec2 \
+\cb4     \},\cb1 \
+\cb4     \cf7 \strokec7 "pizza"\cf2 \strokec2 : \{\cb1 \
+\cb4         \cf7 \strokec7 "instructions"\cf2 \strokec2 : \cf7 \strokec7 "1. Preheat the oven to 450\'b0F.\cf8 \strokec8 \\n\cf7 \strokec7 2. Place the pizza in the oven and bake for 10-12 minutes."\cf2 \strokec2 ,\cb1 \
+\cb4         \cf7 \strokec7 "ingredients"\cf2 \strokec2 : [\cf7 \strokec7 "pizza"\cf2 \strokec2 , \cf7 \strokec7 "oven"\cf2 \strokec2 ],\cb1 \
+\cb4         \cf7 \strokec7 "cooking_time"\cf2 \strokec2 : \cf7 \strokec7 "10-12 minutes"\cf2 \cb1 \strokec2 \
+\cb4     \}\cb1 \
+\cb4 \}\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf9 \cb4 \strokec9 while\cf2 \strokec2  \cf8 \strokec8 True\cf2 \strokec2 :\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb4     \cf3 \strokec3 # Prompt the user for their food choice\cf2 \cb1 \strokec2 \
+\cb4     \cf5 \strokec5 user_choice\cf2 \strokec2  \cf6 \strokec6 =\cf2 \strokec2  \cf10 \strokec10 input(\cf7 \strokec7 "Choose a food item (chicken, pasta, pizza): "\cf10 \strokec10 )\cf2 \strokec2 .\cf10 \strokec10 lower()\cf2 \cb1 \strokec2 \
+\
+\cb4     \cf3 \strokec3 # Check if the choice is in the instructions dictionary\cf2 \cb1 \strokec2 \
+\cb4     \cf9 \strokec9 if\cf2 \strokec2  \cf5 \strokec5 user_choice\cf2 \strokec2  \cf10 \strokec10 in\cf2 \strokec2  \cf5 \strokec5 food_data\cf2 \strokec2 :\cb1 \
+\cb4         \cf10 \strokec10 print(\cf7 \strokec7 "Here are the cooking instructions for"\cf10 \strokec10 , \cf5 \strokec5 user_choice\cf10 \strokec10 )\cf2 \cb1 \strokec2 \
+\cb4         \cf10 \strokec10 print(\cf7 \strokec7 "Ingredients:"\cf10 \strokec10 , \cf7 \strokec7 ", "\cf10 \strokec10 .join(\cf5 \strokec5 food_data\cf10 \strokec10 [\cf5 \strokec5 user_choice\cf10 \strokec10 ][\cf7 \strokec7 "ingredients"\cf10 \strokec10 ]))\cf2 \cb1 \strokec2 \
+\cb4         \cf10 \strokec10 print(\cf7 \strokec7 "Cooking Time:"\cf10 \strokec10 , \cf5 \strokec5 food_data\cf10 \strokec10 [\cf5 \strokec5 user_choice\cf10 \strokec10 ][\cf7 \strokec7 "cooking_time"\cf10 \strokec10 ])\cf2 \cb1 \strokec2 \
+\cb4         \cf10 \strokec10 print(\cf7 \strokec7 "Instructions:"\cf10 \strokec10 )\cf2 \cb1 \strokec2 \
+\cb4         \cf10 \strokec10 print(\cf5 \strokec5 food_data\cf10 \strokec10 [\cf5 \strokec5 user_choice\cf10 \strokec10 ][\cf7 \strokec7 "instructions"\cf10 \strokec10 ])\cf2 \cb1 \strokec2 \
+\cb4     \cf9 \strokec9 else\cf2 \strokec2 :\cb1 \
+\cb4         \cf10 \strokec10 print(\cf7 \strokec7 "Sorry, I don't have instructions for that food."\cf10 \strokec10 )\cf2 \cb1 \strokec2 \
+\
+\cb4     \cf3 \strokec3 # Option to repeat or exit\cf2 \cb1 \strokec2 \
+\cb4     \cf5 \strokec5 user_option\cf2 \strokec2  \cf6 \strokec6 =\cf2 \strokec2  \cf10 \strokec10 input(\cf7 \strokec7 "Do you want to try another food (yes/no)? "\cf10 \strokec10 )\cf2 \strokec2 .\cf10 \strokec10 lower()\cf2 \cb1 \strokec2 \
+\cb4     \cf9 \strokec9 if\cf2 \strokec2  \cf5 \strokec5 user_option\cf2 \strokec2  \cf6 \strokec6 !=\cf2 \strokec2  \cf7 \strokec7 "yes"\cf2 \strokec2 :\cb1 \
+\cb4         \cf10 \strokec10 print(\cf7 \strokec7 "Goodbye!"\cf10 \strokec10 )\cf2 \cb1 \strokec2 \
+\cb4         \cf9 \strokec9 break\cf2 \cb1 \strokec2 \
+\
+}
